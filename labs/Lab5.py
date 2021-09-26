@@ -4,15 +4,14 @@ print ('**********Letter Counter**********')
 print ('**********Alex Mestemaker**********')
 print ('Welcome to the letter counter program!')
 print ('')
-theWord=input('Give me a SINGLE string to count the number of total letters, vowels, and consonants are in that word: ')
+theWord=input('Give me a SINGLE string so I can count the number of total letters, vowels, and consonants are in that word: ')
 
-#Here I declared the list of vowels and consonants to later be used in the for loop to check for the number of times they appear.
+#Here I declared and casted the list of vowels and consonants to later be used in the for loop to check for the number of times they appear.
 vowels=['a', 'e', 'i', 'o', 'u']
 consonants=['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z']
 # I declared the variable for the number of characters 
 numberOfVowels = 0
 numberOfConsonants = 0
-totalNumberOfLetters = 0
 counter = 0
 letters = 0
 
@@ -24,6 +23,10 @@ for letters in theWord:
             theWord=list(input('Give me a SINGLE string to count the number of total letters, vowels, and consonants are in that word: '))
 print(' ')
 counter = 0 #resets the counter back to 0
+
+#This prints the total number of characters
+print('The total number of characters in ' + str(theWord) + ' is ' + str(len(theWord)))
+print(' ')
 
 # This is the second step to the problem, now that I have the word inputted, I use a for loop to go through every iteration (each letter) of the word, and checks for the total number of vowels.
 while counter < 5:
