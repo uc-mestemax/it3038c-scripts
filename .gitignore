@@ -1,5 +1,2 @@
 output.log
-/directoryname
-*.log
-*.pdf
-.pycache
+*node_modules*
