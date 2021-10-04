@@ -1,8 +1,6 @@
-# Project 1
+# UC Shuttle Tracker
 
 ## What is this?
-This is a powershell script that monitors the analyzes the UC shuttle stops and alerts you when its time to leave, 5 minutes before arrival, when the bus is one minute away, and when it is arriving.
-
 This is a powershell script that analyzes the UC shuttle stops and alerts you when its time to leave, when the bus is five minutes away, one minute away, and arriving. It simply runs Invoke-Requests on the shuttlestops to grab the json data, and to look for the avg estimated time of arrival. It refreshes the data every 10 seconds. And when the if statement matches the one of the designated times, it runs a MessageBox to prompt you on the screen of the time.
 
 ## How do I use it?
