@@ -13,8 +13,8 @@ function getuptime() {
     return concatenatedTime;
 }
 
-//days = serverTime.math.floor
-    //https://github.com/uc-botheaj/it3038c-scripts/tree/main/node
+// For Reference:
+//https://github.com/uc-botheaj/it3038c-scripts/tree/main/node
 
 var server = http.createServer(function (req, res) {
     if (req.url === "/") {
