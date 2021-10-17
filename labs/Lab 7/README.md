@@ -1,13 +1,14 @@
-# Subnet calculator module for powershell
+# Subnet Calculator Module for Powershell
 
 First, Install the module
 ```powershell
 Install-Module -Name IPAndNetworkCalculator 
 ```
 
-You can use the plugin with the command 
+You can use the module with the command 
 ```powershell 
-New-IPCalcNetwork```
+New-IPCalcNetwork
+```
 
 1. For faster use, pass in the arguments 
 ```powershell 
@@ -23,7 +24,10 @@ $myIP = (Get-NetIPAddress -AddressFamily IPV4 -InterfaceAlias Ethernet).IPAddres
 $mySubnetMask = (Get-NetIPAddress -AddressFamily IPV4 -InterfaceAlias Ethernet).PrefixLength
 ```
 
-Then, you can pass the two variables into the subnet calculator.```powershell New-IPCalcNetwork -NetworkID $myIP -NetworkMaskLength $mySubnetMask```
+Then, you can pass the two variables into the subnet calculator.
+```powershell 
+New-IPCalcNetwork -NetworkID $myIP -NetworkMaskLength $mySubnetMask
+```
 
 2. You can also divide up your subnet using the .Split(x) function.
 
