@@ -5,7 +5,7 @@ $mySubnetMask = (Get-NetIPAddress -AddressFamily IPV4 -InterfaceAlias Ethernet).
 #Write-Host '********Subnet Statistics********'
 #New-IPCalcNetwork -NetworkID $myIP -NetworkMaskLength $mySubnetMask
 
-$newSubnet = New-IPCalcNetwork -NetworkID $myIP -NetworkMaskLength $mySubnetMask
+$newSubnet = (New-IPCalcNetwork -NetworkID $myIP -NetworkMaskLength $mySubnetMask)
 
 Write-Host '*********Dividing the Subnet*********'
 #$newSubnet.Split(4)
