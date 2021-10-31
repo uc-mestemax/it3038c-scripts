@@ -1,16 +1,10 @@
-//const cheerio = require('cheerio');
-//const request = require("request-promise")
-
-
 const axios = require('axios'); //This is the main library that I used to GET the json data from UC's double map. There were a lot of different choices like pupetteer and cheerio that are more suited I believe for dynamic sites.
-const { time } = require('console');
-const { response } = require('express');
 
-//const URL = 'https://uc.doublemap.com/map/v2/eta?stop='
 const stopID = '129';
+const objectPosition = '0';
 
 const URL = `https://uc.doublemap.com/map/v2/eta?stop=${stopID}`;
-console.log(URL);
+console.log("Watching the url: " + URL);
 
 
 
@@ -42,9 +36,7 @@ function shuttleScraper() {
     axios 
 	.get(URL)
 	.then((response) => {
-        const eta = response.data.etas[stopID].etas[0]['avg'];
-        window.alert(eta)
-
+        const eta = response.data.etas[stopID].etas[objectPosition]['avg'];
         console.log('The ETA for the shuttle is ' + eta + ' minute(s)')
         //These are a series of if statements that are checking the ETA compared to the time you need to leave.
         if (eta === 5) {
