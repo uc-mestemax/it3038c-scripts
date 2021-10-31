@@ -10,7 +10,7 @@ $json = Invoke-WebRequest -Uri https://uc.doublemap.com/map/v2/eta?stop=$busStop
 $convertedjson = $json | ConvertFrom-Json
 
 #This ensures that the object position is valid, before the script continues.
-if ($convertedjson.etas.$busStopID.etas.avg[$objectPosition] -eq $NULL) 
+if ($NULL -eq $convertedjson.etas.$busStopID.etas.avg[$objectPosition]) 
 {
     Write-Host "That object position does not match any value in the json data, please run the program again and select a correct object position."
     [System.Windows.MessageBox]::Show('That object position does not match any value in the json data, please run the program again and select a correct object position.', 'UC Shuttle Stop Tracker', 'Ok');
@@ -55,7 +55,7 @@ if ($convertedjson.etas.$busStopID.etas.avg -le $timeToLeave -And $hasTimeToLeav
     $hasTimeToLeaveBeenUsed = $true
 }
 
-if ($convertedjson.etas.$busStopID.etas.avg -eq 5 -And $timeToLeave -ne 5 -And $hasETA5BeenUsed -eq $false) #The -And operator prevents a duplicate prompt from showing if the time to leave matches the integer its checking
+if ($convertedjson.etas.$busStopID.etas.avg -eq 5 -And $timeToLeave -ne 5 -And $hasETA5BeenUsed -eq $false) # The -And operator prevents a duplicate prompt from showing if the time to leave matches the integer its checking
 {
     Write-Output "The bus is arriving in five minutes!"
     [System.Windows.MessageBox]::Show('The bus is arriving in five minutes!.', 'UC Shuttle Stop Tracker', 'Ok');
