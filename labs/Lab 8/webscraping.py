@@ -3,10 +3,10 @@ import requests, re
 
 data = requests.get('https://www.omnicalculator.com/other/days-until-christmas').content
 soup = BeautifulSoup(data, 'html.parser')
-span = soup.find("b")
-days = span.text
+span = soup.find("div", {"class":"GenericText"})
+timeAway = span.text
 
-print("*************   There are" + days + " until Christmas!   *************")
+print("*************   There are" + timeAway + "  *************")
 print('''                             
                           ______
                         ,'      `.
@@ -42,4 +42,4 @@ print('''
                   |   |    |    |    | |
                   ''')
 print('')
-print("*************   There are" + days + " until Christmas!   *************")
+print("*************   There are" + timeAway + "  *************")

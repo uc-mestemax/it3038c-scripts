@@ -7,7 +7,7 @@ const { time } = require('console');
 const { response } = require('express');
 
 //const URL = 'https://uc.doublemap.com/map/v2/eta?stop='
-const stopID = '110';
+const stopID = '129';
 
 const URL = `https://uc.doublemap.com/map/v2/eta?stop=${stopID}`;
 console.log(URL);
@@ -18,13 +18,13 @@ console.log(URL);
 //console.log(ETA)
 
 
-/* ( async () => {
+/*  ( async () => {
     const response = await fetch('https://wordpress.org/wp-json');
     const json = await response.json();
     console.log(JSON.stringify(json));
   })()
 
-  async(); */
+  async();  */
 
 
 
@@ -38,34 +38,44 @@ console.log(URL);
     console.log(eta)
 } */
 
-/* function shuttleScraper() {
+function shuttleScraper() {
     axios 
 	.get(URL)
 	.then((response) => {
         const eta = response.data.etas[stopID].etas[0]['avg'];
+        window.alert(eta)
+
+        console.log('The ETA for the shuttle is ' + eta + ' minute(s)')
+        //These are a series of if statements that are checking the ETA compared to the time you need to leave.
+        if (eta === 5) {
+            console.log('There is five minutes until the shuttle is arriving!')
+        }
+        if (eta === 1) {
+            console.log('There is one minute until the shuttle is arriving!')
+        }
+        if (eta === timeToGetThere) {
+            console.log('Leave now to make it to the stop in time!')
+        }
+        if (eta === 0) {
+            console.log('The shuttle is arriving!')
+        }
+        if (eta !== 0) {
+            setTimeout(shuttleScraper, 15000);
+        }
 	})
 	.catch((error) => {
 		console.error(error)
-	})
-    return eta;
-} */
+	})  
+} 
 
-const shuttleScraper = async () => {
-    const response = await axios.get(URL);
-    return response.data.eta[stopID].etas[0]['avg']
-}
-
-/* function continueToCheck() {
-    console.log('Continuing to check ETAs')
-    whatIsTheETA()
-    if (eta=0) {
-    }
-
-    DELETE ME
+/* async function shuttleScraper() {
+    const response =  axios.get(URL);
+    const eta = response.data.eta[stopID].etas[0]['avg'];
+    console.log(eta);
+    //return eta;
 } */
 
 
-    
     function isItTimeToLeave(eta) {
         console.log('The ETA for the shuttle is ' + eta + ' minute(s)')
         //These are a series of if statements that are checking the ETA compared to the time you need to leave.
@@ -86,14 +96,12 @@ const shuttleScraper = async () => {
         }
     }
 
-
-
 const timeToGetThere = 10;
 
-function collectTheETA() {
+async function collectTheETA() {
     //var eta = shuttleScraper()
-    console.log(Promise.shuttleScraper)
-    //isItTimeToLeave(shuttleScraper);
-}
+    //console.log(await shuttleScraper())
+} 
 
-collectTheETA()
+shuttleScraper()
+//collectTheETA()
