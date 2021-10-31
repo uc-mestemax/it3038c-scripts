@@ -14,3 +14,9 @@ it outputs an additional message to remind you.
 # How to use it?
 
 1. Ensure you have NodeJS installed.
+
+![picture 1](../images/b477873de72de544036c64e4eef5c868ce29db63e44a5aef4d3de0d6a736c19c.png)  
+
+![picture 2](../images/11a299442236b42bc8aa42d3b6057253b3235726f5eb602b272ef5ca76ffed74.png)  
+
+![picture 3](../images/70c9e9abd0f4accd87d22f762d8adf97f2133fd01a6d7d353be6562e8913f4f4.png)  
