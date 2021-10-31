@@ -3,7 +3,7 @@ This project was a little bit more ambitious than I thought it was going to be, 
 and allowing the information to be displayed in the index.html file, as well as allowing the user to submit the variables directly, 
 rather than just manipulating the code themselves. I am planning on using the alert() function to expand much more on the functionality of the script.
 
-I ran into a lot of problems with figuring out asynchronous functions. And because this is really my first time learning JavaScript, I had to do alot of googling to figure things out.
+I ran into a lot of problems with figuring out asynchronous functions. And because this is really my first time learning JavaScript, I had to do alot of Googling to figure things out, and currently looking for how to have the HTML scripts talk to NodeJS.
 
 # What is it?
 This is a NodeJS script that analyzes a specific UC shuttle stop and alerts you when its time to leave, when the bus is five minutes away, one minute away, and arriving. 
