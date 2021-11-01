@@ -1,7 +1,7 @@
 # NodeJS ShuttleStop Tracker
 This project was a little bit more ambitious than I thought it was going to be, so I think I am going to expand on the web front for project 3, 
 and allowing the information to be displayed in the index.html file, as well as allowing the user to submit the variables directly, 
-rather than just manipulating the code themselves. I am planning on using the alert() function to expand much more on the functionality of the script.
+rather than just manipulating the variables themselves. I am planning on using the alert() function to expand much more on the functionality of the script.
 
 I ran into a lot of problems with figuring out asynchronous functions. And because this is really my first time learning JavaScript, I had to do alot of Googling to figure things out, and currently looking for how to have the HTML scripts talk to NodeJS.
 
@@ -27,4 +27,13 @@ Second item to take note of, is the json object position. If your shuttle stop l
 
 
 In the project2.js file, go to line 6 where you will see the two variables: stopID and objectPosition. Change their values to the values you are using from the json file.
-![picture 3](../images/9d1137197ce465ea5c22d86fbe199dcc6344b602601e187f26cc869597fa536e.png)  
+![picture 5](../images/e54e63a4e4f6a7041ebe2c35743590157e8428940195fa34d817904d79add5fd.png)  
+
+
+Now run the javascript file using `node ./pathToProject2.js`
+You should instantly see the ETA for your stop in the console, it is attained and refreshed every 10 seconds.
+
+![picture 6](../images/a626cea63622964926e308461f7fb2200df09f5f1d46eb2b7fc0cd2f540b38cf.png)  
+
+
+Feel free to contact me on Teams if you need help running it!
