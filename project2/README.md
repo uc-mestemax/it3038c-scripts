@@ -27,4 +27,4 @@ Second item to take note of, is the json object position. If your shuttle stop l
 
 
 In the project2.js file, go to line 6 where you will see the two variables: stopID and objectPosition. Change their values to the values you are using from the json file.
-![picture 3](../images/991414996bde92e3f97e2ee3ef7c867a8b176ca1b8d552ef73bcdafc73d2c4f0.png)  
+![picture 3](../images/9d1137197ce465ea5c22d86fbe199dcc6344b602601e187f26cc869597fa536e.png)  

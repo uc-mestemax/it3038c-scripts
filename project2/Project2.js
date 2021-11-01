@@ -4,7 +4,7 @@ const axios = require('axios'); //This is the main library that I used to GET th
 //The variables below are the variables that you modify.//
 //*****************************************************//
 const stopID = '129'; //This is the stopID that can be found in the doublemap link: /eta?stop=129
-const objectPosition = '0'; // If there is more than one shuttle that stops at your location, you will have to select that. It is the integer under the second iteration of etas/
+const objectPosition = '0'; // If there is more than one shuttle that stops at your location, you will have to select that. It is the integer under the second iteration of etas:
 
 const URL = `https://uc.doublemap.com/map/v2/eta?stop=${stopID}`;
 console.log("Watching the url: " + URL);
