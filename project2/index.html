@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8"/>
     <script>
-        var name = prompt("What's your name?")        
-
         window.onload = function(){
-        var name = prompt("What's your name?");
-        document.getElementById('output').innerHTML = lengthOfName;
+        var stopID = prompt("What is the stopID for the bus?");
+        var objectPosition = prompt("What is the object's position in the json");
+        document.getElementById('stopID').innerHTML = stopID;
+        document.getElementById('objectPosition').innerHTML = objectPosition;
         };
 
     </script>
@@ -17,7 +17,14 @@
 <body>
     <h1 style="color: maroon; text-align: center;">Shuttle Tracker</h1>
     <body>
-        <p id="output"></p>
+        <h3 style="text-align: center;">Your Stop ID:</h3>
+        <p id="stopID" style="text-align: center;"></p>
+
+        <h3 style="text-align: center;">Your Object ID:</h3>
+        <p id="objectPosition" style="text-align: center;"></p>
+
+        <h3>The current shuttle ETA</h3>
+        <p id=shuttleETA></p>
     </body>
     
 </body>
