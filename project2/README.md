@@ -1,7 +1,7 @@
 # NodeJS ShuttleStop Tracker
 This project was a little bit more ambitious than I thought it was going to be, so I think I am going to expand on the web front for project 3, 
 and allowing the information to be displayed in the index.html file, as well as allowing the user to submit the variables directly, 
-rather than just manipulating the variables themselves. I am planning on using the alert() function to expand much more on the functionality of the script.
+rather than just manipulating the variables themselves. I am planning on using the alert() function to expand much more on the functionality of the script. But this project's goal was essentially translating what I did in project 1 into another programming language.
 
 I ran into a lot of problems with figuring out asynchronous functions. And because this is really my first time learning JavaScript, I had to do alot of Googling to figure things out, and currently looking for how to have the HTML scripts talk to NodeJS.
 
@@ -13,7 +13,7 @@ it outputs an additional message to remind you.
 
 # How to use it?
 
-Ensure you have NodeJS installed, download the project2.js, and open it in any text editor you like, preferably vscode if you have it.
+Ensure you have NodeJS installed, clone my repository, and open project2.js in any text editor you like, preferably vscode if you have it. You will also need to run `npm install axios` to allow for the scraping functionality.
 
 First off, the program needs to know what shuttle stop you want to monitor. To do this navigate to [the University's shuttle map](https://uc.doublemap.com/map/), and turn on the route you want to use. Right click on either the header, or the right side panel, and select "inspect element". Or navigate to your browsers dev tools, and find that feature (F12 works for most browsers). Switch to the network tab to inspect file transfers, and click on your desired stop location to monitor. You should see a GET request made with the file `eta?stop=<yourStopID>`
 
@@ -37,3 +37,10 @@ You should instantly see the ETA for your stop in the console, it is attained an
 
 
 Feel free to contact me on Teams if you need help running it!
+
+
+#server.js
+
+This file is also in the works and currently will print the current ETA to the index.html file.
+
+Modify the variables in the same way as with Project2.js, and use `node .\project2\server.js
