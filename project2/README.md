@@ -39,8 +39,10 @@ You should instantly see the ETA for your stop in the console, it is attained an
 Feel free to contact me on Teams if you need help running it!
 
 
-#server.js
+# server.js
 
-This file is also in the works and currently will print the current ETA to the index.html file.
+This file is also in the works and currently will print the current ETA to the index.html file. I will be extending it's functionality in project 3, this project was mainly translating my project1 code into javascript.
 
-Modify the variables in the same way as with Project2.js, and use `node .\project2\server.js
+Modify the variables in the same way as with Project2.js, and use `node .\it3038c-scripts\project2\server.js`
+
+Currently the ETA is not being dynamically updated, and the stopID and objectID will be implemented later to give a GUI experience. Could also maybe test the idea of watching different stops, but I am opened to suggestions.

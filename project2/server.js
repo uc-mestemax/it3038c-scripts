@@ -15,25 +15,17 @@ const timeToGetThere = 10;
 //*****************************************************//
 const stopID = '28'; //This is the stopID that can be found in the doublemap link: /eta?stop=28
 const objectPosition = '0'; // If there is more than one shuttle that stops at your location, you will have to select that. It is the integer under the second iteration of etas/
+//****************************************************//
+
 const URL = `https://uc.doublemap.com/map/v2/eta?stop=${stopID}`;
 console.log("Watching the url: " + URL);
 
 //shuttleScraper()
 
 
-const html = `<!DOCTYPE HTML>
-<html>
-    <head> 
-        <title>Node JS Response</title> 
-    </head>
-    <body>
-        <p>ETA: ${collectTheETA()}</p>
-        
+const html = fs.readFileSync('it3038c-scripts/project2/index.html')
 
-    </body>
-</html>`
 
-//fs.readFileSync('./project2/index.html')
 //const txt = fs.readFileSync('test.txt')
 
 
@@ -82,23 +74,6 @@ async function collectTheETA() {
     const theETA = await shuttleScraper();
     return theETA;
 } 
-
-
-
-
-
-
-//var ETA = JSON.parse(axios.response)
-//console.log(ETA)
-
-
-/*  ( async () => {
-    const response = await fetch('https://wordpress.org/wp-json');
-    const json = await response.json();
-    console.log(JSON.stringify(json));
-  })()
-
-  async();  */
 
 //function isTimeToLeaveConditionMet
 
