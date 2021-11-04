@@ -1,9 +1,12 @@
 import requests;
 import json;
 
-r = requests.get('http://api.openweathermap.org/data/2.5/weather?zip=%s&appid=0b021b11b88b46ea8d6b0a83a49c5ae7' %zip)
+r = requests.get('http://localhost:3000')
 data = r.json()
 
-print(data)
+print(data[0]['name'] + ' is ' + data[0]['color'])
+print(data[1]['name'] + ' is ' + data[1]['color'])
+print(data[2]['name'] + ' is ' + data[2]['color'])
+print(data[3]['name'] + ' is ' + data[3]['color'])
 
 
