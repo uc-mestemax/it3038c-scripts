@@ -1,0 +1,21 @@
+{% extends "layout.html" %} 
+
+{% block content %} 
+
+<p><em>What is your stopID?</em></p> 
+<p><em>What is your position?</em></p> 
+
+
+<form action="/welcome" method="POST">
+    <label for="stopID">What is your stopID?</label>
+    <input name="stopID"> <br>
+    <label for="arrayPosition">What is your position?</label>
+    <input name="arrayPosition">
+    <br>
+    <input type= "submit" value="Submit">
+</form>
+{% endblock %} 
+
+
+
+
