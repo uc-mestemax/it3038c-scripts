@@ -16,7 +16,7 @@ Double click that link to view the physical json data, and take note of a couple
 ![picture 1](../images/b477873de72de544036c64e4eef5c868ce29db63e44a5aef4d3de0d6a736c19c.png) 
 
 
-Second item to take note of, is the json object position. If your shuttle stop location serves more than one route, you will see all busses that stop there. So you need to figure out which ETA matches the one shown on the map, and note the position it is. In this screenshot, there are two buses: bus 0 and bus 1. 0 will always give you the first bus, so it's usually usuable.
+Second item to take note of, is the json object position. If your shuttle stop location serves more than one route, you will see all busses that stop there. So you need to figure out which ETA matches the one shown on the map, and note the position it is. In this screenshot, there are two buses: bus 0 and bus 1. 0 will always give you the first bus, so it's usually usuable if your just testing it.
 
 ![picture 2](../images/11a299442236b42bc8aa42d3b6057253b3235726f5eb602b272ef5ca76ffed74.png)  
 
@@ -26,14 +26,14 @@ On the localhost:3000 fill in the two input fields on the form with the stopID a
 
 Wait up to 10 seconds and pray that (awaiting) changes to a numeric value, and that's it!
 
-Every time the ETA is refreshed/fetched you will notice it changes color. Also, kind of a limitation of the double map, is that the ETA doesn't decrement fluidly, that ETA values can be skipped. So if you set a reminder for 6 minutes, and it jumps to 4 minutes, you will get a browser alert that your reminder value has been met, and after another 10 seconds passes, you will get notified that there is 5 minutes or less until the shuttle arrives. 
+Every time the ETA is refreshed/fetched you will notice it changes color. Also, kind of a limitation of the double map, is that the ETA doesn't decrement fluidly, that ETA values can be skipped. So if you set a reminder for 6 minutes, and it jumps to 4 minutes, you will get a browser alert that your reminder value has been met, and after another 10 seconds passes the ETA is fetched again. Then it is checked against a series of if statements to see if an alert should be sent, you will get notified that there is 5 minutes or less until the shuttle arrives, even though the ETA is at 4 minutes.
 
 Feel free to contact me on Teams if you need help running it!
 
 
 ## Final Remarks
 
-I also did this in python using the flask module we were shown in class and it was so much more intuitive that I wish I would of just committed to that. Even though I spent the most time on the nodeJS portion for project three, NodeJS continues to keep me awake at night and give me nightmares, but nonetheless I learned a lot. The python script can be ran by using a virtual env environment, running `pip install requests`, and finally running `python .\project3\flas\web.py`. But that script was more of a "see if it works" rather than anything special.
+I also did this in python using the flask module we were shown in class and it was so much more intuitive that I wish I would of just committed to that. Even though I spent the most time on the nodeJS portion for project three, NodeJS continues to keep me awake at night and give me nightmares, but nonetheless I learned a lot. The python script can be ran by using a virtual env environment, running `pip install requests`, and finally running `python .\project3\flask\web.py`. But that script was more of a "see if it works" rather than anything special.
 
 This project really told me what I didn't know about the breadth of many languages, so I am hoping to strengthen those skills as I move forward. 
 
