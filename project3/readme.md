@@ -33,7 +33,7 @@ Feel free to contact me on Teams if you need help running it!
 
 ## Final Remarks
 
-I also did this in python using the flask module we were shown in class and it was so much more intuitive that I wish I would of just committed to that. Even though I spent the most time on the nodeJS portion for project three, NodeJS continues to keep me awake at night and give me nightmares, but nonetheless I learned a lot. The python script can be ran by using a virtual env environment, running `pip install requests`, and finally running `python .\project3\flask\web.py`. But that script was more of a "see if it works" rather than anything special.
+I also did this in python using the flask module we were shown in class and it was so much more intuitive that I wish I would of just committed to that. Even though I spent the most time on the nodeJS portion for project three, NodeJS continues to keep me awake at night and give me nightmares, but nonetheless I learned a lot. The python script can be ran by using a virtual env environment, running `pip install requests` && `pip install flask`, and finally running `python .\project3\flask\web.py`. But that script was more of a "see if it works" rather than anything special.
 
 This project really told me what I didn't know about the breadth of many languages, so I am hoping to strengthen those skills as I move forward. 
 
