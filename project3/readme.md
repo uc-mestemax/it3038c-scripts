@@ -1,5 +1,5 @@
 # NodeJS ShuttleStop Tracker
-This project expanded on project 2 by applying client side HTML to fetch data from the nodeJS server, instead of you have to monitor the ETAs of the shuttles in the terminal window, you can now view them on localhost:3000. I also deployed it to [heroku](https://uc.doublemap.com/map/) for fun.
+This project expanded on project 2 by applying client side HTML to fetch data from the nodeJS server, instead of you have to monitor the ETAs of the shuttles in the terminal window, you can now view them on localhost:3000. I also deployed it to [heroku](https://uc-shuttle-scraper.herokuapp.com/) for fun.
 
 # What is it?
 This is a NodeJS script that analyzes a specific UC shuttle stop and alerts you when its time to leave, when the bus is five minutes away, one minute away, and arriving. I also included a javascript button that can store a value that will alert you when the ETA is at or exceeded that value. NodeJS runs a library called axios on the shuttle stops to grab the json data, and to look for the avg estimated time of arrival. The client sends a fetch request to /get-eta to refresh the data every 10 seconds. And when the if statement matches the one of the aforementioned times, it outputs an alert to remind you.
@@ -24,7 +24,7 @@ Second item to take note of, is the json object position. If your shuttle stop l
 On the localhost:3000 fill in the two input fields on the form with the stopID and objectPosition. Change their values to the values you are using from the json file. Click submit
 ![picture 3](../images/99616770ba3930eb736c6178aaa342bc451e6b8a1d2e01d52e606c0231c7c09e.png)  
 
-
+Wait up to 10 seconds and pray that (awaiting) changes to a numeric value, and that's it!
 
 Feel free to contact me on Teams if you need help running it!
 
