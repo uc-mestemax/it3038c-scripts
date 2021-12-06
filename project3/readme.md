@@ -6,7 +6,7 @@ This is a NodeJS script that analyzes a specific UC shuttle stop and alerts you 
 
 # How to use it?
 
-Ensure you have NodeJS installed, clone my repository by running `git clone https://github.com/uc-mestemax/it3038c-scripts.git`, and `cd it3038c-scripts`. You will also need to run `npm install axios` to allow for the scraping functionality. It's actually important to be right at the root of the /i3038c-scripts file path, because the script makes references to some relative paths that are contingent of you being in that spot. After you have installed axios, and ensured you are at the root of it3038c-scripts, run `node .\project3\flask\server.js` This will create a listening server on localhost:3000, so navigate a web browser to that spot. You should see something similar to this:
+Ensure you have NodeJS installed, clone my repository by running `git clone https://github.com/uc-mestemax/it3038c-scripts.git`, and `cd it3038c-scripts`. You will also need to run `npm install axios` to allow for the scraping functionality. It's actually important to be right at the root of the /i3038c-scripts file path, because the script makes references to some relative paths that are contingent of you being in that spot. After you have installed axios, and ensured you are at the root of it3038c-scripts, run `node .\project3\server.js` This will create a listening server on localhost:3000, so navigate a web browser to that spot. You should see something similar to this:
 
 ![picture 2](../images/9637416407fb898c8f5198b23e0afbaa5b582ba7bffb3ca9f6780c1ec74e29f6.png)  
 
