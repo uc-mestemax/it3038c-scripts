@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    
+<head>
+    <meta charset="utf-8"/>
+    <title>UC Shuttle Tracker</title>
+    <script>
+        window.onload = function(){
+        //var stopID = prompt("What is the stopID for the bus?");
+        //var objectPosition = prompt("What is the object's position in the json");
+        document.getElementById('stopID').innerHTML = stopID;
+        document.getElementById('objectPosition').innerHTML = objectPosition;
+        };
+    </script>
+
+    <style>
+     
+        .prompt {
+            text-align: left;
+        }
+        
+        form {
+            display: flex;
+            text-align: center;
+        }
+
+        .right-pane { 
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 style="color: red; text-align: center;">Bearcat Shuttle Tracker</h1>
+        <h3 style="text-align: center;">Your Stop ID:</h3>
+        <p id="stopID" style="text-align: center;"></p>
+
+        <h3 style="text-align: center;">Your Object ID:</h3>
+        <p id="objectPosition" style="text-align: center;"></p>
+
+        <h3 style="text-align: center;">The current shuttle ETA</h3>
+        <p id=shuttleETA style="text-align: center;"></p>
+
+
+        <body>
+            <h1 style="color: red; text-align: center;">Bearcat Shuttle Tracker</h1>
+        
+            <form method='GET' action="/getTheETA">
+                <div class="container">
+                    <div class="prompt">
+                        <span>What stop location would you like to monitor?</span>
+                    </div>
+                </div>
+                <div class="right-pane">
+                    <input type="text" id="firstname" name="firstname" />
+                </div>
+
+                <div class="submit-name">
+                    <input type="submit" value="Send off your data!" />
+                </div>
+                </div>
+            </form>
+
+            <p>This is HTML. The current ETA is ${ETA}</p>
+        </body>
+    
+</body>
+</html>
