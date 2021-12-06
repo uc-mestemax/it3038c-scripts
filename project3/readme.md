@@ -26,18 +26,18 @@ On the localhost:3000 fill in the two input fields on the form with the stopID a
 
 Wait up to 10 seconds and pray that (awaiting) changes to a numeric value, and that's it!
 
+Every time the ETA is refreshed/fetched you will notice it changes color. Also, kind of a limitation of the double map, is that the ETA doesn't decrement fluidly, that ETA values can be skipped. So if you set a reminder for 6 minutes, and it jumps to 4 minutes, you will get a browser alert that your reminder value has been met, and after another 10 seconds passes, you will get notified that there is 5 minutes or less until the shuttle arrives. 
+
 Feel free to contact me on Teams if you need help running it!
 
 
 ## Final Remarks
 
-I also did this in python using the flask module we were shown in class and it was so much easier that I wish I would of just committed to that. That file can also be ran in a virtual env environment, running `pip install requests`, and finally running `python .\project3\flas\web.py`
+I also did this in python using the flask module we were shown in class and it was so much more intuitive that I wish I would of just committed to that. Even though I spent the most time on the nodeJS portion for project three, NodeJS continues to keep me awake at night and give me nightmares, but nonetheless I learned a lot. The python script can be ran by using a virtual env environment, running `pip install requests`, and finally running `python .\project3\flas\web.py`. But that script was more of a "see if it works" rather than anything special.
 
-This project really told me what I didn't know and the breadth of many languages, so I am hoping to strengthen those skills as I move forward. I also did this with flask, and oh my gosh, it was so much more intuitive for me. Even though I spent the most time on the nodeJS portion for project three, NodeJS continues to keep me awake at night and give me nightmares, but nonetheless I learned a lot.
+This project really told me what I didn't know about the breadth of many languages, so I am hoping to strengthen those skills as I move forward. 
 
-The big caveat or downfall of using heroku is that each time a form gets submitted, it overwrites the global variable of the form input that gets sent, which will change the parameters that the scraper depends on to fetch the ETA. So, essentially only one person can use it at a time, but I just wanted to throw it on heroku for the laughs, and in hindsight, this probably would of been better in just plain client side javascript fetching directly from the doublemap. Probably not the best idea to deploy a webscraper to heroku either I'd imagine.
+The big caveat or downfall of using heroku is that each time a form gets submitted, it overwrites the global variable of the form input that gets sent, which will change the parameters that the scraper depends on to fetch the ETA. So, essentially only one person can use it at a time, but I just wanted to throw it on heroku for the laughs, and in hindsight, this probably would of been better in just plain client side javascript fetching directly from the doublemap. Probably not the best idea to deploy a webscraper to heroku either I'd imagine, but if I had to improve it, I would have to find a way to keep track of client sessions. I'll save that for another day.
 
 Nonetheless, it was incredibly rewarding to accomplish this scraper in powershell, nodejs, and python (still gotta try it in bash). Deploying it in heroku was another improvement that allows me to use the scraper on my phone. This was a lot of fun!
 
-
-Every time the ETA is refreshed you will notice it changes color. 
